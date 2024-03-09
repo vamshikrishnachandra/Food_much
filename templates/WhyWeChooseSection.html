@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block title %} <title>WhyWeChooseSection</title>{% endblock %}
+{% block content %}
+<style>
+.wcu-section {
+  background-color: #f9fbfe;
+}
+.wcu-section-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+  margin: 50px;
+}
+.wcu-section-description {
+  color: #5a7184;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+.wcu-card {
+  text-align: center;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e5eaf4;
+  border-radius: 16px;
+}
+.wcu-card-image {
+  width: 87px;
+  height: 90px;
+}
+.wcu-card-title {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 500;
+}
+.wcu-card-description {
+  color: #7b8794;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+</style>
+<div class="wcu-section pt-5 pb-5" id="wcuSection">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="wcu-section-heading">Why Choose Us?</h1>
+          <p class="wcu-section-description">
+            We use both original recipes and classic versions of famous food
+            items.
+          </p>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="wcu-card p-3 mb-3">
+            <img
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-serve.png"
+              class="wcu-card-image"
+            />
+            <h1 class="wcu-card-title mt-3">Food Service</h1>
+            <p class="wcu-card-description">
+              Experience fine dining at the comfort of your home. All our
+              orders are carefully packed and arranged to give you the nothing
+              less than perfect.
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="wcu-card p-3 mb-3">
+            <img
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/fruits-img.png"
+              class="wcu-card-image"
+            />
+            <h1 class="wcu-card-title mt-3">Fresh Food</h1>
+            <p class="wcu-card-description">
+              The Fresh Food group provides fresh-cut fruits and vegetables
+              directly picked from our partner farms and farm houses so that
+              you always get them tree to plate.
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="wcu-card p-3 mb-3">
+            <img
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/offers-img.png"
+              class="wcu-card-image"
+            />
+            <h1 class="wcu-card-title mt-3">Best Offers</h1>
+            <p class="wcu-card-description">
+              Food Coupons & Offers upto
+              <span class="offers">50% OFF</span>
+              and Exclusive Promo Codes on All Online Food Orders.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="{% url 'Home' %}">
+        <button class="custom-button">Back</button>
+      </a>
+    </div>
+  </div>
+{% endblock %}
