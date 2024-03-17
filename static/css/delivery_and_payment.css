@@ -1,8 +1,9 @@
 .delivery-and-payment-section {
-    background-color: white;
-    }
+background-color: white;
+}
 .delivery-and-payment-section-img {
 width: 270px;
+margin: 50px;
 }
 .delivery-and-payment-section-heading {
 color: #183b56;
