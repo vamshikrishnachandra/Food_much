@@ -1,0 +1,8 @@
+Python 3.12.2
+django 5.0
+HTML 5
+CSS 3
+py -m venv env
+pip install django
+django-admin startproject myproject .
+django-admin startapp myapp
