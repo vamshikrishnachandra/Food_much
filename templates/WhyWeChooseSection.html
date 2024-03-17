@@ -1,46 +1,10 @@
-{% extends "base.html" %}
+{% load static %}
 {% block title %} <title>WhyWeChooseSection</title>{% endblock %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/wcu.css' %}">
+{% endblock %}
 {% block content %}
-<style>
-.wcu-section {
-  background-color: #f9fbfe;
-}
-.wcu-section-heading {
-  color: #183b56;
-  font-family: "Roboto";
-  font-size: 28px;
-  font-weight: 700;
-  margin: 50px;
-}
-.wcu-section-description {
-  color: #5a7184;
-  font-family: "Roboto";
-  font-size: 16px;
-}
-.wcu-card {
-  text-align: center;
-  background-color: white;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #e5eaf4;
-  border-radius: 16px;
-}
-.wcu-card-image {
-  width: 87px;
-  height: 90px;
-}
-.wcu-card-title {
-  color: #323f4b;
-  font-family: "Roboto";
-  font-size: 22px;
-  font-weight: 500;
-}
-.wcu-card-description {
-  color: #7b8794;
-  font-family: "Roboto";
-  font-size: 16px;
-}
-</style>
+{% include 'partials/header.html' %}
 <div class="wcu-section pt-5 pb-5" id="wcuSection">
     <div class="container">
       <div class="row">
@@ -100,3 +64,4 @@
     </div>
   </div>
 {% endblock %}
+{% include 'partials/footer.html' %}

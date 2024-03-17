@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 {% load static %}
-<html>
-  <head>
+<html lang="en">
+<head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
-    {% block link %}
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    {% endblock %}
-  </head>
- {% block title %} <title>Home</title>{% endblock %}
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+</head>
 <body>
-  {% include 'partials/header.html' %}
-    {% block content %}
-    <div class="banner-section-bg-container d-flex justify-content-center flex-column">
-      <div class="text-center">
-        <h1 class="banner-heading mb-3">Get Delicious Food Anytime</h1>
-        <p class="banner-caption mb-4">Eat Smart & Healthy</p>
-        <a href="{% url 'ExploreMenuSection' %}">
-          <button class="custom-button">View Menu</button>
-        </a>
-        <a href="{% url 'WhyWeChooseSection' %}">
-          <button class="custom-button">Why we choose</button>
-        </a>
-        <button class="custom-outline-button">Follows Us</button>
+    <div class="footer-section pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-logo-light.png"
+                class="food-munch-logo"
+              />
+              <h1 class="footer-section-mail-id">orderfood@foodmunch.com</h1>
+              <p class="footer-section-address">
+                123 Ayur Vigyan Nagar, New Delhi, India.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    {% endblock %}
-    {% include 'partials/footer.html' %}
 </body>
 </html>

@@ -1,54 +1,10 @@
-{% extends "base.html" %}
+{% load static %}
 {% block title %} <title>Explore Menu Section</title> {% endblock %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/explore_menu_section.css' %}">
+{% endblock %}
+{% include 'partials/header.html' %}
 {% block content %}
-<style>
-.explore-menu-section {
-  background-color: white;
-}
-.menu-section-heading {
-  color: #183b56;
-  font-family: "Roboto";
-  font-size: 28px;
-  font-weight: 700;
-  padding: 60px;
-}
-.menu-item-image {
-  border-radius: 16px;
-}
-.menu-card-title {
-  color: #323f4b;
-  font-family: "Roboto";
-  font-size: 18px;
-  font-weight: 500;
-  margin-top: 24px;
-}
-.menu-item-link {
-  color: #d0b200;
-  font-family: "Roboto";
-  font-size: 14px;
-  font-weight: 500;
-}
-.menu-item-card {
-  border-radius: 16px;
-}
-.healthy-food-section {
-  background-color: #f9fbfe;
-}
-.healthy-food-section-img {
-  width: 270px;
-}
-.healthy-food-section-heading {
-  color: #183b56;
-  font-family: "Roboto";
-  font-size: 28px;
-  font-weight: 700;
-}
-.healthy-food-section-description {
-  color: #5a7184;
-  font-family: "Roboto";
-  font-size: 16px;
-}
-</style>
     <div class="explore-menu-section pt-5 pb-5" id="exploreMenuSection">
         <div class="container">
           <div class="row">
@@ -232,3 +188,4 @@
         </div>
       </div>
 {% endblock %}
+{% include 'partials/footer.html' %}

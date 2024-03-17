@@ -1,0 +1,55 @@
+.explore-menu-section {
+    background-color: white;
+}
+.menu-section-heading {
+color: #183b56;
+font-family: "Roboto";
+font-size: 28px;
+font-weight: 700;
+padding: 60px;
+}
+.menu-item-image {
+border-radius: 16px;
+}
+.menu-card-title {
+color: #323f4b;
+font-family: "Roboto";
+font-size: 18px;
+font-weight: 500;
+margin-top: 24px;
+}
+.menu-item-link {
+color: #d0b200;
+font-family: "Roboto";
+font-size: 14px;
+font-weight: 500;
+}
+.menu-item-card {
+border-radius: 16px;
+}
+.healthy-food-section {
+background-color: #f9fbfe;
+}
+.healthy-food-section-img {
+width: 270px;
+}
+.healthy-food-section-heading {
+color: #183b56;
+font-family: "Roboto";
+font-size: 28px;
+font-weight: 700;
+}
+.healthy-food-section-description {
+color: #5a7184;
+font-family: "Roboto";
+font-size: 16px;
+}
+.custom-button {
+color: white;
+background-image: linear-gradient(#d0b200, #a58d00);
+width: 130px;
+height: 45px;
+border-width: 0;
+border-radius: 8px;
+margin-right: 10px;
+}
